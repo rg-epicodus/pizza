@@ -13,6 +13,7 @@ body .personalinfoInput {
 }
 
 /*Well Overlay and Well text*/
+
 .well {
   background: rgba(255,255,255,.5);
   font-size: 24px;
@@ -68,6 +69,7 @@ img.snapshot {
 }
 
 /*Media Query Resizing Information*/
+
 @media (max-width: 575px) {
   body {
     background-image: url('../img/mobile_bg.jpg');
@@ -91,17 +93,17 @@ img.snapshot {
 
 /*NavBar Formatting*/
 
-ul li {
+.navbar ul li {
   font-size: 16px;
 }
 
-ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: white;
   display: block;
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
   background-color: white;
   color: black;
 }

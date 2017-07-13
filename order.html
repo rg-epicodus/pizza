@@ -29,33 +29,57 @@
     </nav>
     <div class="container">
       <div class="well">
-        <h1>Enter your delivery information.</h1>
         <form id="pizza">
-          <!--Size selectors  -->
-                      <h3>Size</h3>
-                      <div class="radio">
-                        <label>
-                        <input type="radio" name="optionsRadios1" id="Small" value= "8">
-                        Small 10"
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                        <input type="radio" name="optionsRadios2" id="Medium" value= "10" >
-                        Medium 14"
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                        <input type="radio" name="optionsRadios3" id="Large" value= "12" >
-                        Large 18"
-                        </label>
-                      </div>
+          <!-- Pizza Sizes -->
+          <h2>Please select size of pizza:</h2>
+          <h3>Size</h3>
+          <div class="radio">
+            <label>
+            <input type="radio" name="size" id="Medium" value= "12" >
+            Medium 12"
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="size" id="Large" value= "14" >
+            Large 18"
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="size" id="Family" value= "16" >
+            Family 18"
+            </label>
+          </div>
+          <!-- Pizza Toppings -->
+          <h2>Please select toppings:</h2>
+          <div>
+            <input type="checkbox" id="topPepperoni" name="toppings" value="3">
+            <label for="toppings">Pepperoni</label>
+          </div>
+          <div>
+            <input type="checkbox" id="topBacon" name="toppings" value="3">
+            <label for="toppings">Bacon</label>
+          </div>
+          <div>
+            <input type="checkbox" id="topCheese" name="toppings" value="3">
+            <label for="toppings">Extra Cheese</label>
+          </div>
+          <div>
+            <input type="checkbox" id="topOlives" name="toppings" value="2">
+            <label for="toppings">Black Olives</label>
+          </div>
+          <div>
+            <input type="checkbox" id="topMushrooms" name="toppings" value="2">
+            <label for="toppings">Mushrooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="topOnions" name="toppings" value="2">
+            <label for="toppings">Onions</label>
+          </div>
 
 
-
-
-
+          <!-- Payment Info -->
           <h1>Please enter your method of payment:</h1>
           <div class="radio">
             <label>
@@ -85,6 +109,7 @@
         </form>
       </div>
 
+      <!-- Order confirmation -->
       <div id="receipt" class="well">
         <h1>Your Pizza is on its way!</h1>
         <p>You have ordered:</p>
