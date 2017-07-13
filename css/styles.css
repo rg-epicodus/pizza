@@ -1,0 +1,112 @@
+/*Main background image and format*/
+
+body {
+  background-image: url(../img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body .personalinfoInput {
+  color: black;
+}
+
+/*Well Overlay and Well text*/
+.well {
+  background: rgba(255,255,255,.5);
+  font-size: 24px;
+  font-weight: bolder;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+/*Delivery info Popup*/
+
+#overlay {
+    display:none;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+    z-index:99999;
+}
+
+#popup {
+    display:none;
+    position:fixed;
+    padding: 10px;
+    left:50%;
+    top:30%;
+    width:300px;
+    height:150px;
+    margin-top:-75px;
+    margin-left:-150px;
+    background:#FFFFFF;
+    border:2px solid #000;
+    z-index:100000;
+}
+
+.right {
+  float: right;
+}
+
+img.snapshot {
+  position: absolute;
+  top: 10%; bottom: 0; left: 29%; right: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #af0303;
+  box-shadow: 10px 10px 15px rgba(0,0,0,.3);
+}
+
+#LearnMoreBtn {
+  margin-top: 10px;
+}
+
+/*Media Query Resizing Information*/
+@media (max-width: 575px) {
+  body {
+    background-image: url('../img/mobile_bg.jpg');
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+      background-image: url('../img/mobile_bg.jpg');
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+/*NavBar Formatting*/
+
+ul li {
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/*order confirmation area*/
+#receipt {
+  display: none;
+}

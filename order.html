@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza by Lou</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Pizza by Lou</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="https://www.google.com/maps/@-0.6383806,-90.5628887,8.46z?hl=en" target="_blank">Location</a></li>
+          <li><a href="#">About</a></li>
+          <li><button id="LearnMoreBtn">Delivery Information</button>
+            <div id="overlay"></div>
+            <div id="popup">
+              <p>We have a "30 days or it's free" delivery promise.  If your order is not delivered in 30 days or less, it is absolutely free.  Delivery charges will still apply.</p>
+              <button id="CloseBtn">close</button></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="well">
+        <h1>Enter your delivery information.</h1>
+        <form id="pizza">
+          <!--Size selectors  -->
+                      <h3>Size</h3>
+                      <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios1" id="Small" value= "8">
+                        Small 10"
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios2" id="Medium" value= "10" >
+                        Medium 14"
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios3" id="Large" value= "12" >
+                        Large 18"
+                        </label>
+                      </div>
+
+
+
+
+
+          <h1>Please enter your method of payment:</h1>
+          <div class="radio">
+            <label>
+              <input type="radio" name="paymentType" value="Credit" checked>
+              Credit Card
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="paymentType" value="PayPal">
+              PayPal
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="paymentType" value="BitCoin">
+              BitCoin
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="paymentType" value="Cash">
+              Cash
+            </label>
+          </div>
+          <button type="submit" class="btn btn-success">Submit Order</button>
+        </form>
+      </div>
+
+      <div id="receipt" class="well">
+        <h1>Your Pizza is on its way!</h1>
+        <p>You have ordered:</p>
+        <ul><span id="order"></span></ul>
+        <ul><span id="price"></span></ul>
+        <p>We have your address listed as:</p>
+        <ul><span id="address"></span></ul>
+        <p>Payment type:</p>
+        <ul><span id="paymentType"></span></ul>
+
+      </div>
+    </div>
+  </body>
+</html>
