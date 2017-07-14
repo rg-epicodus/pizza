@@ -109,6 +109,19 @@ img.snapshot {
 }
 
 /*order confirmation area*/
-#receipt {
+.form-group {
+  padding-bottom: 10px;
+}
+
+#orderConfirmation {
   display: none;
+}
+
+.pizza {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.pizza:hover {
+  text-decoration: underline;
 }

@@ -28,98 +28,70 @@
       </div>
     </nav>
     <div class="container">
-      <div class="well">
-        <form id="pizza">
-          <!-- Pizza Sizes -->
-          <h2>Please select size of pizza:</h2>
-          <h3>Size</h3>
-          <div class="radio">
-            <label>
-            <input type="radio" name="size" id="Medium" value= "12" >
-            Medium 12"
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-            <input type="radio" name="size" id="Large" value= "14" >
-            Large 18"
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-            <input type="radio" name="size" id="Family" value= "16" >
-            Family 18"
-            </label>
-          </div>
-          <!-- Pizza Toppings -->
-          <h2>Please select toppings:</h2>
-          <div>
-            <input type="checkbox" id="topPepperoni" name="toppings" value="3">
-            <label for="toppings">Pepperoni</label>
-          </div>
-          <div>
-            <input type="checkbox" id="topBacon" name="toppings" value="3">
-            <label for="toppings">Bacon</label>
-          </div>
-          <div>
-            <input type="checkbox" id="topCheese" name="toppings" value="3">
-            <label for="toppings">Extra Cheese</label>
-          </div>
-          <div>
-            <input type="checkbox" id="topOlives" name="toppings" value="2">
-            <label for="toppings">Black Olives</label>
-          </div>
-          <div>
-            <input type="checkbox" id="topMushrooms" name="toppings" value="2">
-            <label for="toppings">Mushrooms</label>
-          </div>
-          <div>
-            <input type="checkbox" id="topOnions" name="toppings" value="2">
-            <label for="toppings">Onions</label>
-          </div>
-
-
-          <!-- Payment Info -->
-          <h1>Please enter your method of payment:</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="paymentType" value="Credit" checked>
-              Credit Card
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="paymentType" value="PayPal">
-              PayPal
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="paymentType" value="BitCoin">
-              BitCoin
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="paymentType" value="Cash">
-              Cash
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success">Submit Order</button>
-        </form>
+      <div class="page-header well">
+        <h1>Build Your Pizza</h1>
       </div>
+      <!-- pizza order form -->
+      <div class="row well">
+        <div class="col-xs-8" id="order-display">
+          <h3>Order Here:</h3>
+          <form id="order-form">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- pizza size -->
+                <div class="form-group">
+                  <label>Size:</label>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="small">Small $10</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="medium" checked>Medium $14</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="large">Large $18</label>
+                  </div>
+                </div>
+                <!-- toppings -->
+                <div class="form-group">
+                  <label>Toppings ($3 Each):</label>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="pepperoni">Pepperoni</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="bacon">Bacon</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="sausage">Sausage</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="extra cheese">Extra Cheese</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="olives">Olives</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="peppers">Peppers</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="mushrooms">Mushrooms</label>
+                  </div>
 
-      <!-- Order confirmation -->
-      <div id="receipt" class="well">
-        <h1>Your Pizza is on its way!</h1>
-        <p>You have ordered:</p>
-        <ul><span id="order"></span></ul>
-        <ul><span id="price"></span></ul>
-        <p>We have your address listed as:</p>
-        <ul><span id="address"></span></ul>
-        <p>Payment type:</p>
-        <ul><span id="paymentType"></span></ul>
-
+                </div>
+              </div>
+              </div>
+            </div>
+            <button class="btn btn-default" type="submit">Calculate Price</button>
+          </form>
+          <div>
+            <!-- order details -->
+            <h3>Your pizza gonna be:</h3>
+            <ul id="pizza-list"></ul>
+            <div id="orderConfirmation">
+              <h4></h4>
+              <p>Toppings yous wanted: <span id="toppings"></span></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
