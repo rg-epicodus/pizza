@@ -8,16 +8,12 @@ body {
   background-size: cover;
 }
 
-body .personalinfoInput {
-  color: black;
-}
-
 /*Well Overlay and Well text*/
 
 .well {
   background: rgba(255,255,255,.5);
   font-size: 24px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
   text-decoration: none;
   border: 2px solid black;
 }
@@ -109,6 +105,7 @@ img.snapshot {
 }
 
 /*order confirmation area*/
+
 .form-group {
   padding-bottom: 10px;
 }
@@ -119,9 +116,18 @@ img.snapshot {
 
 .pizza {
   cursor: pointer;
-  color: #0088cc;
+  color: black;
 }
 
 .pizza:hover {
   text-decoration: underline;
+}
+
+ul #pizza-list {
+  font-size: 24px;
+}
+
+#toppings {
+  font-weight: bold;
+  font-style: italic;
 }

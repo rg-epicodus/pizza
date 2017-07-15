@@ -47,7 +47,7 @@ window.onload = function() {
 };
 
 $(document).ready(function() {
-  $('#order-form').submit(function(event) {
+  $('#pizzaForm').submit(function(event) {
     event.preventDefault();
 
     var size = $('input[name=size]:checked').val();
@@ -56,7 +56,7 @@ $(document).ready(function() {
       }).get();
     var newPizza = new Pizza(size, toppings);
     newPizza.pizzaPrice();
-    $('#pizza-list').append('<li><span class="pizza">' + newPizza.lineItem() + '</span></li>');
+    $('#pizzaDisplay').append('<li><span class="pizza">' + newPizza.lineItem() + '</span></li>');
 
 
     $(".pizza").last().click(function() {

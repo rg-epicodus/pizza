@@ -11,17 +11,15 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Pizza by Lou</a>
+          <a class="navbar-brand" href="index.html">Pizza by Lou</a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
           <li><a href="order.html">Order</a></li>
           <li><a href="https://www.google.com/maps/@-0.6383806,-90.5628887,8.46z?hl=en" target="_blank">Location</a></li>
-          <li><a href="#">About</a></li>
           <li><button id="LearnMoreBtn">Delivery Information</button>
             <div id="overlay"></div>
             <div id="popup">
-              <p>We have a "30 days or it's free" delivery promise.  If your order is not delivered in 30 days or less, it is absolutely free.  Delivery charges will still apply.</p>
+              <p>We have a "30 days or it's free" delivery promise.  If your order is not delivered in 30 days or less, it is absolutely free.  Delivery charges will still apply. Please do not tip delivery boy!!</p>
               <button id="CloseBtn">close</button></li>
         </ul>
         </div>
@@ -33,9 +31,9 @@
       </div>
       <!-- pizza order form -->
       <div class="row well">
-        <div class="col-xs-8" id="order-display">
+        <div class="col-xs-8">
           <h3>Order Here:</h3>
-          <form id="order-form">
+          <form id="pizzaForm">
             <div class="row">
               <div class="col-md-6">
                 <!-- pizza size -->
@@ -58,13 +56,13 @@
                     <label><input name="toppings" type="checkbox" value="pepperoni">Pepperoni</label>
                   </div>
                   <div class="checkbox">
-                    <label><input name="toppings" type="checkbox" value="bacon">Bacon</label>
+                    <label><input name="toppings" type="checkbox" value="ground beef">Ground Beef</label>
                   </div>
                   <div class="checkbox">
                     <label><input name="toppings" type="checkbox" value="sausage">Sausage</label>
                   </div>
                   <div class="checkbox">
-                    <label><input name="toppings" type="checkbox" value="extra cheese">Extra Cheese</label>
+                    <label><input name="toppings" type="checkbox" value="tomatoes">Tomatoes</label>
                   </div>
                   <div class="checkbox">
                     <label><input name="toppings" type="checkbox" value="olives">Olives</label>
@@ -75,6 +73,10 @@
                   <div class="checkbox">
                     <label><input name="toppings" type="checkbox" value="mushrooms">Mushrooms</label>
                   </div>
+                  <div class="checkbox">
+                    <label><input name="toppings" type="checkbox" value="extra cheese">Extra Cheese</label>
+                  </div>
+
 
                 </div>
               </div>
@@ -85,10 +87,12 @@
           <div>
             <!-- order details -->
             <h3>Your pizza gonna be:</h3>
-            <ul id="pizza-list"></ul>
+            <ul id="pizzaDisplay"></ul>
             <div id="orderConfirmation">
               <h4></h4>
-              <p>Toppings yous wanted: <span id="toppings"></span></p>
+              <p>Toppings yous wanted: <span id="toppings"></span></p><br>
+              <p><strong>Please do not tip delivery boy!!</strong></p>
+              <img src="img/Panucci.jpg" alt="">
             </div>
           </div>
         </div>
