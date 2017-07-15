@@ -29,7 +29,7 @@ Are there issues that have not yet been resolved that you want to let users know
 
 ## Support and contact details
 
-The web site for this project is located at: https://rg-epicodus.github.io/pizza-delivery
+The web site for this project is located at: https://rg-epicodus.github.io/pizza
 
 ## License
 
